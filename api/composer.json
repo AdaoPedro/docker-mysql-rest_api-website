@@ -1,0 +1,7 @@
+{
+    "require": {
+        "clue/framework-x": "dev-main",
+        "react/mysql": "^0.6@dev",
+        "react/async": "^4 || ^3 || ^2"
+    }
+}

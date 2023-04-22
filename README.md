@@ -47,4 +47,4 @@ docker exec -i dev-mysql-container mysql -uroot -p12345678 < api/db/script/initi
 ```
 
 
-Now you can open your browser and type http://127.0.0.1:9002/products 
+Now you can open your browser and type http://127.0.0.1:9002

@@ -1,10 +1,10 @@
 # Mariadb, RestAPI and Vanilla PHP Website Running on Different Containers. 
 
-For practicing purpose of Docker basic knowledge I got for the last days, I decided to create a very very simple project using Mariadb, PHP Framework-X and vanilla PHP.
+For practicing purpose of Docker basic knowledge I got for the last days, I decided to create a very very simple project using Mariadb, PHP Framework-X (the simple and fast micro framework for building reactive web applications with PHP) and vanilla PHP.
 
 This project consists in having three different systems running on diffent Docker Containers and communicating each other, so: 
-1. I created an image based on the official mariadb image and running it on a container. 
-2. I created an API using framework-F which queries Mariadb database. 
+1. I created an image based on the official mariadb image. 
+2. I created a REST API using Framework-X which queries Mariadb database. 
 3. finally I created a website using vanilla PHP and Bootstrap which consumes the API for gettting data. 
    
 ## How to run
@@ -47,4 +47,4 @@ docker exec -i dev-mysql-container mysql -uroot -p12345678 < api/db/script/initi
 ```
 
 
-Now you can open your browser and type http://127.0.0.1:9002
+Now you can open your browser and type http://127.0.0.1:9002 and see everything working well

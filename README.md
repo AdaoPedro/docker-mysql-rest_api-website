@@ -41,7 +41,7 @@ docker run -d -p 9001:8080 -v $(pwd)/api/data:/app --rm --name dev-php-api-conta
 docker run -d -p 9002:8080 -v $(pwd)/website/data:/www --rm --name dev-website-container dev-website-image
 ```
 
-### Executing sql script for creating and populating database
+### Executing SQL script for creating and populating database
 ```
 docker exec -i dev-mysql-container mysql -uroot -p12345678 < api/db/script/initialize_db.sql
 ```
